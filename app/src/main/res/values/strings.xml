@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cocktail DB</string>
+    <string name="title">Drinks</string>
+    <string name="filters">Filters</string>
+</resources>
