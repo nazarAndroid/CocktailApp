@@ -7,15 +7,7 @@
     tools:context=".ui.filter.FiltersFragment"
     android:background="#FFF">
 
-    <ImageView
-        android:id="@+id/return_button"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:src="@drawable/return_draw"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ProgressBar
         android:id="@+id/progressLoad"
@@ -32,13 +24,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="26dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/filters"
         android:textColor="#000"
+        android:layout_marginStart="30dp"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/return_button"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout

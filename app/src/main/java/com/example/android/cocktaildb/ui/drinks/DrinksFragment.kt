@@ -40,13 +40,6 @@ class DrinksFragment : Fragment() {
 
         snackbar = Snackbar.make(view, "Error Connection. Try again later", Snackbar.LENGTH_INDEFINITE)
 
-        filter_button.setOnClickListener {
-            val transaction: FragmentTransaction =
-                fragmentManager!!.beginTransaction()
-            transaction.add(R.id.nav_host_fragment, fragment)
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
         LiveDataNetworkStatus(
             requireContext()
         ).observe(viewLifecycleOwner, Observer {

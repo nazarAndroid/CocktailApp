@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/drinksFragment">
+
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.example.android.cocktaildb.ui.drinks.DrinksFragment"
+        android:label="AllNewsFragment"
+        tools:layout="@layout/drinks_layout" />
+    <fragment
+        android:id="@+id/filtersFragment"
+        android:name="com.example.android.cocktaildb.ui.filter.FiltersFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/filters_layout" />
+</navigation>

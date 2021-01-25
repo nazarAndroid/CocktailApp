@@ -11,7 +11,9 @@ import com.example.android.cocktaildb.common.LiveDataNetworkStatus
 import com.example.android.cocktaildb.ui.main.MainViewModel
 import com.example.android.cocktaildb.R
 import com.example.android.cocktaildb.model.Filter
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.filters_layout.*
 
 class FiltersFragment : Fragment() {
@@ -31,9 +33,6 @@ class FiltersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        return_button.setOnClickListener {
-            returnDrinksFragment()
-        }
 
         snackbar = Snackbar.make(view, "Error Connection. Try again later", Snackbar.LENGTH_INDEFINITE)
 
@@ -70,6 +69,5 @@ class FiltersFragment : Fragment() {
     }
     private fun returnDrinksFragment(){
         viewModel.reloadItems()
-        fragmentManager?.popBackStack()
     }
 }

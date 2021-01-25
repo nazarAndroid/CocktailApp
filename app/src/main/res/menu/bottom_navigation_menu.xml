@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drinksFragment"
+        android:enabled="true"
+        android:icon="@drawable/drinks_draw"
+        android:title="" />
+    <item
+        android:id="@+id/filtersFragment"
+        android:enabled="true"
+        android:icon="@drawable/filter_draw"
+        android:title="" />
+</menu>
